@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <h1>Online Sushi Shop</h1>
+      <h2>Order your own sushi of your kind!</h2>
+    </div>
+
+    <div>
+      <h4>Sushi Flavor Percent</h4>
+      <div>50%, 100%, 150%</div>
+
+      <input id="Outline-input" type="range" value="100%" min="50%" max="150%" step="3"></input>
+    </div>
+
+    <div>
+      <h4>Sushi Plate</h4>
+      <select id="Sushi-plate">
+        <option value="Blue">Blue</option>
+        <option value="Yellow"></option>
+        <option value="Red"></option>
+      </select>
+    </div>
+
+    <div>
+      <h4>Sushi Toppings</h4>
+      <input type="checkbox" name="toppings" value=""> </input><br>
+      <input type="checkbox" name="toppings" value=""> </input><br>
+      <input type="checkbox" name="toppings" value=""> </input><br>
+      <input type="checkbox" name="toppings" value=""> </input><br>
+    </div>
+
+    <button onclick="onSubmit()">Test Button</button>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
