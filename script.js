@@ -1,16 +1,24 @@
-function onSubmit(){
-  let outline = document.getElementById('Outline-input')
-  let plate = document.getElementById('Sushi-plate')
-  console.log(outline.value +" "+plate.value)
-}
+let outline = document.getElementById('Outline-input')
+let plate = document.getElementById('Sushi-plate')
 
-function onSubmit(){
-  let topping = document.getElementsByName('Sushi-topping')
-  topping.forEach(node=> console.log(node.checked))
+function printToppings(){
 
-  for (var i =0; i<topping.length; i++){
-    if topping[i].checked){
-      console.log(topping[i].value)
+  let toppings = document.getElementsByName('toppings')
+  for (var i =0; i<toppings.length; i++){
+  if(toppings[i]).checked){
+    console.log(toppings[i].value)
     }
   }
 }
+
+function onSubmit(){
+  let zip = document.getElementById('zip').value
+  console.log(zip)
+}
+
+if(zip === "666"){
+  document.getElementById("zip").style.color = "green";
+  }
+  else{
+    document.getElementById("zip").style.color = "red";
+  }
