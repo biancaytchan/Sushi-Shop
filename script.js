@@ -14,11 +14,12 @@ function printToppings(){
 function onSubmit(){
   let zip = document.getElementById('zip').value
   console.log(zip)
-}
 
-if(zip === "666"){
+  if(zip === "666"){
   document.getElementById("zip").style.color = "green";
   }
   else{
     document.getElementById("zip").style.color = "red";
   }
+}
+
